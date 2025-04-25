@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Gourmet Haven - A fine dining experience offering delicious cuisine in a comfortable atmosphere.">
+    <title>Gourmet Haven Restaurant</title>
+    <link rel="icon" href="/api/placeholder/32/32" type="image/png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header" id="top">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#top">Gourmet Haven</a>
+                </div>
+                <button class="navbar-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="main-menu">
+                    <span class="hamburger-icon"></span>
+                </button>
+                <div class="nav-menu" id="main-menu">
+                    <ul>
+                        <li><a href="#top" aria-current="page">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#find-us">Find Us</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Banner Section -->
+    <section class="hero-banner">
+        <div class="container">
+            <div class="banner-content">
+                <h1>Experience Fine Dining</h1>
+                <p>Indulge in exquisite cuisine prepared by our award-winning chefs.</p>
+                <div class="banner-buttons">
+                    <a href="#menu" class="btn btn-primary">View Menu</a>
+                    <a href="#find-us" class="btn btn-secondary">Make Reservation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Gourmet Haven</h2>
+                    <p>Founded in 2005, Gourmet Haven has been serving the finest cuisine with a focus on fresh, locally-sourced ingredients. Our restaurant provides an elegant yet comfortable atmosphere where you can enjoy exceptional meals with friends and family.</p>
+                    <p>Our award-winning chefs create dishes that blend traditional techniques with innovative flavors, resulting in a dining experience that's both familiar and exciting.</p>
+                    <a href="#find-us" class="btn btn-primary">Book a Table</a>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/500/400" alt="Restaurant interior showing elegantly set tables and ambient lighting">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-category active" data-category="starters">Starters</button>
+                <button class="menu-category" data-category="mains">Main Courses</button>
+                <button class="menu-category" data-category="desserts">Desserts</button>
+                <button class="menu-category" data-category="drinks">Drinks</button>
+            </div>
+            <div class="menu-items" id="starters">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Bruschetta</h3>
+                        <span class="price">$12</span>
+                    </div>
+                    <p>Grilled bread rubbed with garlic and topped with olive oil, salt, and fresh tomato.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Calamari Fritti</h3>
+                        <span class="price">$14</span>
+                    </div>
+                    <p>Tender squid lightly coated in flour and fried, served with lemon and aioli.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Mushroom Arancini</h3>
+                        <span class="price">$12</span>
+                    </div>
+                    <p>Crispy risotto balls filled with wild mushrooms and mozzarella.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Caprese Salad</h3>
+                        <span class="price">$10</span>
+                    </div>
+                    <p>Fresh tomatoes, mozzarella, and basil drizzled with balsamic reduction.</p>
+                </div>
+            </div>
+            <div class="menu-items" id="mains" style="display: none;">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Filet Mignon</h3>
+                        <span class="price">$32</span>
+                    </div>
+                    <p>8oz grass-fed beef tenderloin with roasted vegetables and red wine reduction.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Lobster Pasta</h3>
+                        <span class="price">$38</span>
+                    </div>
+                    <p>Homemade fettuccine with Maine lobster in a light cream sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Chicken Marsala</h3>
+                        <span class="price">$26</span>
+                    </div>
+                    <p>Pan-seared chicken breast with mushrooms and Marsala wine sauce.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Vegetable Risotto</h3>
+                        <span class="price">$22</span>
+                    </div>
+                    <p>Creamy Arborio rice with seasonal vegetables and Parmesan.</p>
+                </div>
+            </div>
+            <div class="menu-items" id="desserts" style="display: none;">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Tiramisu</h3>
+                        <span class="price">$9</span>
+                    </div>
+                    <p>Classic Italian dessert with espresso-soaked ladyfingers and mascarpone cream.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Chocolate Lava Cake</h3>
+                        <span class="price">$10</span>
+                    </div>
+                    <p>Warm chocolate cake with a molten center, served with vanilla ice cream.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Crème Brûlée</h3>
+                        <span class="price">$8</span>
+                    </div>
+                    <p>Rich vanilla custard topped with a layer of caramelized sugar.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Seasonal Fruit Tart</h3>
+                        <span class="price">$9</span>
+                    </div>
+                    <p>Buttery pastry shell filled with custard and topped with fresh seasonal fruits.</p>
+                </div>
+            </div>
+            <div class="menu-items" id="drinks" style="display: none;">
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Signature Cocktails</h3>
+                        <span class="price">$14</span>
+                    </div>
+                    <p>Ask your server about our rotating selection of handcrafted cocktails.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Wine Selection</h3>
+                        <span class="price">$12-$15</span>
+                    </div>
+                    <p>Curated selection of wines by the glass. Full wine list available.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Craft Beer</h3>
+                        <span class="price">$8</span>
+                    </div>
+                    <p>Local and imported craft beers on tap and by the bottle.</p>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-header">
+                        <h3>Non-Alcoholic Options</h3>
+                        <span class="price">$6</span>
+                    </div>
+                    <p>House-made sodas, mocktails, and fresh-pressed juices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2>Featured Dishes</h2>
+            <div id="dishCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#dishCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#dishCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#dishCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#dishCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#dishCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/api/placeholder/800/400" class="d-block w-100" alt="Pan-seared salmon with seasonal vegetables">
+                        <div class="carousel-caption">
+                            <h3>Pan-seared Salmon</h3>
+                            <p>Fresh salmon with seasonal vegetables and lemon butter sauce.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/api/placeholder/800/400" class="d-block w-100" alt="Beef Wellington with potato puree">
+                        <div class="carousel-caption">
+                            <h3>Beef Wellington</h3>
+                            <p>Tender beef with mushroom duxelles wrapped in puff pastry.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/api/placeholder/800/400" class="d-block w-100" alt="Truffle risotto with parmesan">
+                        <div class="carousel-caption">
+                            <h3>Truffle Risotto</h3>
+                            <p>Creamy risotto with black truffle and aged parmesan.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/api/placeholder/800/400" class="d-block w-100" alt="Roasted duck breast with orange sauce">
+                        <div class="carousel-caption">
+                            <h3>Duck à l'Orange</h3>
+                            <p>Roasted duck breast with a caramelized orange sauce.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/api/placeholder/800/400" class="d-block w-100" alt="Chocolate soufflé dessert">
+                        <div class="carousel-caption">
+                            <h3>Chocolate Soufflé</h3>
+                            <p>Light and airy chocolate dessert with vanilla bean ice cream.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dishCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dishCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2>Photo Gallery</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item large">
+                    <img src="/api/placeholder/600/400" alt="Restaurant dining area with elegant table settings">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/300/300" alt="Chef preparing a gourmet dish in kitchen">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/300/300" alt="Artfully plated dessert with edible flowers">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/300/300" alt="Bar area with craft cocktail preparation">
+                </div>
+                <div class="gallery-item">
+                    <img src="/api/placeholder/300/300" alt="Private dining room for special events">
+                </div>
+                <div class="gallery-item large">
+                    <img src="/api/placeholder/600/400" alt="Outdoor patio seating with string lights">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Find Us Section -->
+    <section id="find-us" class="find-us-section">
+        <div class="container">
+            <h2>Find Us</h2>
+            <div class="find-us-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Gourmet Street<br>Foodie District<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Opening Hours</h3>
+                            <p>Monday - Friday: 5:00 PM - 11:00 PM<br>Saturday - Sunday: 12:00 PM - 11:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h3>Reservations</h3>
+                            <p>+1 (555) 123-4567<br>reservations@gourmethaven.com</p>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <h3>Book a Table</h3>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Time</label>
+                            <input type="time" id="time" name="time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Number of Guests</label>
+                            <input type="number" id="guests" name="guests" min="1" max="20" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Special Requests</label>
+                            <textarea id="message" name="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Book Now</button>
+                    </form>
+                </div>
+                <div class="map-container">
+                    <!-- Google Maps Embed -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.3059353029!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sca!4v1629842630947!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" title="Google Maps showing Gourmet Haven restaurant location"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <h3>Gourmet Haven</h3>
+                    </div>
+                    <p>Experience fine dining in the heart of New York City.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#top">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#find-us">Find Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <address>
+                        <p><i class="fas fa-map-marker-alt"></i> 123 Gourmet Street, Foodie District, New York, NY 10001</p>
+                        <p><i class="fas fa-phone-alt"></i> +1 (555) 123-4567</p>
+                        <p><i class="fas fa-envelope"></i> info@gourmethaven.com</p>
+                    </address>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Subscribe to Our Newsletter</h4>
+                    <p>Stay updated with our latest offers and events.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" aria-label="Subscribe"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Gourmet Haven Restaurant. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Accessibility</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Menu toggle for mobile
+        const navbarToggle = document.querySelector('.navbar-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navbarToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            const expanded = navbarToggle.getAttribute('aria-expanded') === 'true' || false;
+            navbarToggle.setAttribute('aria-expanded', !expanded);
+        });
+
+        // Menu category tabs
+        const menuCategories = document.querySelectorAll('.menu-category');
+        const menuItems = document.querySelectorAll('.menu-items');
+        
+        menuCategories.forEach(category => {
+            category.addEventListener('click', function() {
+                const categoryId = this.getAttribute('data-category');
+                
+                // Remove active class from all categories and hide all menu items
+                menuCategories.forEach(item => item.classList.remove('active'));
+                menuItems.forEach(item => item.style.display = 'none');
+                
+                // Add active class to clicked category and show corresponding menu items
+                this.classList.add('active');
+                document.getElementById(categoryId).style.display = 'grid';
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                const headerOffset = 80;
+                const elementPosition = target.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
